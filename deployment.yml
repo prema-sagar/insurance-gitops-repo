@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insurance-health-component
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: insurance-health-component
+  template:
+    metadata:
+      labels:
+        app: insurance-health-component
+    spec:
+      containers:
+      - name: insurance-health-component
+        image: yourdockerhubusername/insurance-health-component:latest
+        ports:
+        - containerPort: 9080
