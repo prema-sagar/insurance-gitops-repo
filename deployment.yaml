@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: insurance-health-component
-        image: prema064/insurance-health-component:96
+        image: prema064/insurance-health-component:97
         ports:
         - containerPort: 9080
